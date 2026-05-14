@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-      - claude/construction-faq-website-eYDTK
   workflow_dispatch:
 
 permissions:
