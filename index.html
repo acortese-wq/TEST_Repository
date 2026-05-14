@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FAQ Bauleitung Tiefbau Netzbau – cablex / Swisscom</title>
+  <meta name="description" content="Fragen und Antworten für Bauleiter im Tiefbau Netzbau. Sicherheit, Technik und Dokumentation nach SUVA, VSS und SIA." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">Zum Inhalt springen</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand-group" aria-label="Co-Branding cablex und Swisscom">
+        <a class="brand brand-cablex" href="https://www.cablex.ch" target="_blank" rel="noopener" aria-label="cablex">
+          <img
+            src="https://www.cablex.ch/etc.clientlibs/cablex/clientlibs/clientlib-site/resources/images/logo.svg"
+            alt="cablex Logo"
+            class="brand-logo"
+            onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'brand-text brand-text-cablex',textContent:'cablex'}))"
+          />
+        </a>
+        <span class="brand-divider" aria-hidden="true"></span>
+        <a class="brand brand-swisscom" href="https://www.swisscom.ch" target="_blank" rel="noopener" aria-label="Swisscom">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/3/30/Swisscom_logo.svg"
+            alt="Swisscom Logo"
+            class="brand-logo"
+            onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'brand-text brand-text-swisscom',textContent:'Swisscom'}))"
+          />
+        </a>
+      </div>
+
+      <nav class="lang-switcher" aria-label="Sprache wählen">
+        <button type="button" data-lang="de" class="lang-btn is-active" aria-pressed="true">DE</button>
+        <button type="button" data-lang="fr" class="lang-btn" aria-pressed="false">FR</button>
+        <button type="button" data-lang="it" class="lang-btn" aria-pressed="false">IT</button>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <p class="eyebrow" data-i18n="eyebrow">Bauleitung Tiefbau · Netzbau</p>
+      <h1 data-i18n="heroTitle">Fragen &amp; Antworten für Bauleiter</h1>
+      <p class="hero-lead" data-i18n="heroLead">
+        Praxiswissen zu Sicherheit, Technik und Dokumentation im Tiefbau für den Netzbau.
+        Orientiert an SUVA, VSS und SIA.
+      </p>
+    </div>
+  </section>
+
+  <main id="main" class="container main">
+    <section class="faq-toolbar" aria-label="FAQ Filter">
+      <div class="category-tabs" role="tablist">
+        <button type="button" class="cat-tab is-active" data-cat="all" role="tab" aria-selected="true" data-i18n="catAll">Alle</button>
+        <button type="button" class="cat-tab" data-cat="safety" role="tab" aria-selected="false" data-i18n="catSafety">Sicherheit &amp; Arbeitsschutz</button>
+        <button type="button" class="cat-tab" data-cat="tech" role="tab" aria-selected="false" data-i18n="catTech">Tiefbau-Technik &amp; Material</button>
+        <button type="button" class="cat-tab" data-cat="docs" role="tab" aria-selected="false" data-i18n="catDocs">Doku, Abnahme &amp; Qualität</button>
+      </div>
+    </section>
+
+    <section class="faq-list" id="faqList" aria-live="polite"></section>
+
+    <p class="empty-state" id="emptyState" hidden data-i18n="empty">Keine Einträge in dieser Kategorie.</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-text" data-i18n="footerText">
+        Diese Seite dient als interne Wissensbasis für Bauleiter im Tiefbau Netzbau.
+        Inhalte sind Orientierungshilfe und ersetzen keine geltenden Normen oder Weisungen.
+      </p>
+      <p class="footer-meta">
+        <span data-i18n="footerRefs">Referenzen:</span> SUVA · VSS · SIA
+      </p>
+    </div>
+  </footer>
+
+  <script src="./faq-data.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
